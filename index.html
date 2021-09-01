@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Genius Demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h1>Genius Demo</h1>
+      <div class="forms">
+        <form id="songForm" class="form-inline mb-2">
+          <input type="text" class="form-control mr-2" placeholder="Song ID" id="song-id">
+          <input type="submit" class="btn btn-primary" value="Show">
+        </form>
+        <form id="searchForm" class="form-inline">
+          <input type="text" class="form-control mr-2" placeholder="Artist, title, or lyrics" id="search">
+          <input type="submit" class="btn btn-primary" value="Search">
+        </form>
+      </div>
+
+      <div class="results">
+        <h3>Results</h3>
+        <div class="row">
+          <div class="col">Title</div>
+          <div class="col" id="title"></div>
+        </div>
+        <div class="row">
+          <div class="col">Artist</div>
+          <div class="col" id="artist"></div>
+        </div>
+        <div class="row">
+          <div class="col">Album</div>
+          <div class="col" id="album"></div>
+        </div>
+      </div>
+    </div>
+    <script src="build/application.js"></script>
+  </body>
+</html>
